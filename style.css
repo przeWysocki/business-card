@@ -5,3 +5,23 @@ html {
 *, *:before, *:after {
     box-sizing:inherit;
 }
+
+
+body {
+    background-color: #2C2141;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.person{
+    max-width:624px;
+    background-color: #F8F8F8;
+    border-radius:16px;
+    margin:16px;
+}
+.person__photo {
+    max-width: 148px;
+}

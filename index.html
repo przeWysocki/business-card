@@ -3,20 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Business-card</title>
+    <title>Wizytówka</title>
     <link href="normalize.css" rel="stylesheet" type="text/css" />
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <main>
-      <article>
-        <img src="" alt="author of this site" />
-        <header>
-          <h1>Imię i nazwisko</h1>
-          <p>stanowisko</p>
+    <main class="main">
+      <article class="person">
+        <img class="person__photo" src="author1.png" alt="author of this site" />
+        <header class="person__info">
+          <h1 class="person__name">Jerzy Wysocki</h1>
+          <p class="person__position">Strażnik lasu</p>
         </header>
-        <p>
-          orem Ipsum has been the industry's standard dummy text ever since the
+        <p class="person__description">
+          Lorem Ipsum has been the industry's standard dummy text ever since the
           1500s, when an unknown printer took a galley of type and scrambled it
           to make a type specimen book. It has survived not only five centuries,
           but also the leap into electronic typesetting, remaining essentially
@@ -24,7 +24,7 @@
           Letraset sheets containing Lorem Ipsum passages, and more recently
           with desktop publishing
         </p>
-        <p>W sieci:Facebook, Github, Instagram</p>
+        <p class="person__links">W sieci:Facebook, Github, Instagram</p>
       </article>
     </main>
   </body>
