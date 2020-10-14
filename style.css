@@ -1,102 +1,108 @@
 html {
-    box-sizing:border-box;
+  box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing:inherit;
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
-
 
 body {
-    background-image: url('forest.jpg');
-    background-repeat: no-repeat;
-    background-size:cover;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    font-family: Arial, Helvetica, sans-serif;
+  background-image: url("forest.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+.main {
+  max-width: 624px;
+  border-radius: 16px;
+  margin: 16px;
+  padding: 32px;
+  background: #decba4; 
+  background: -webkit-linear-gradient(
+    to right,
+    #decba4,
+    #3e5151); 
+  background: linear-gradient(
+    to right,
+    #decba4,
+    #3e5151); 
 
-.main{
-    max-width:624px;
-    background-color: #F8F8F8;
-    border-radius:16px;
-    margin:16px;
-    padding:32px;
-    
+    border:8px solid whitesmoke;
+
 }
 
 .person {
-    display:flex;
-    align-items:flex-start;
+  display: flex;
+  align-items: flex-start;
 }
 
 .person__info {
-    margin-bottom:24px; 
+  margin-bottom: 24px;
 }
 
 .person__description {
-    font-size:16px;
-    line-height:22px;
-    margin:0;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 0;
 }
 
 .person__description--with-margin {
-    margin-bottom:22px;
+  margin-bottom: 22px;
 }
 
 .person__link {
-    color: #E20613;
-    text-decoration: none;
+  color: #cc8f0bef;
+
+  text-decoration: none;
 }
 
 .person__photo {
-    max-width: 180px;
-    max-height:180px;
-    margin-right:32px;
+  max-width: 180px;
+  max-height: 180px;
+  margin-right: 32px;
 }
 
 .person__name {
-    font-size:36px;
-    margin:0;
-    font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+  font-weight: normal;
 }
 
 .person__position {
-    font-size:18px;
-    font-style: italic;
-    margin:0;
-    color:#545454;
+  font-size: 18px;
+  font-style: italic;
+  margin: 0;
+  color: #545454;
 }
 
 .person__text {
-    
 }
 
 .special {
-    color: #ED6D05;
-    font-weight:normal;
+  color: hsl(135, 67%, 47%);
+  font-weight: normal;
 }
 
 @media (max-width: 420px) {
-    .person  {
-        flex-direction:column;
-    }
-    .person__info {
-        text-align:center;
-        margin-top: 16px;
-    }
-    .person__photo {
-        align-self: center;
-        margin-left:32px;
-    }
-    .person__text {
-        align-self:center;
-    }
-    
-
+  .person {
+    flex-direction: column;
+  }
+  .person__info {
+    text-align: center;
+    margin-top: 16px;
+  }
+  .person__photo {
+    align-self: center;
+    margin-left: 32px;
+  }
+  .person__text {
+    align-self: center;
+  }
 }
-
-
