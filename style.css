@@ -90,8 +90,13 @@ body {
     }
     .person__photo {
         align-self: center;
+        margin-left:32px;
     }
     .person__text {
         align-self:center;
     }
+    
+
 }
+
+
